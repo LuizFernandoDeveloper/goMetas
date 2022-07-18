@@ -28,6 +28,7 @@ function SalesCard() {
 
 
   return (
+    
     <div className="goMetas-card">
       <h2 className="goMetas-sales-title">Vendas</h2>
       <div>
@@ -76,7 +77,7 @@ function SalesCard() {
                           <td>{sale.amount.toFixed(2)}</td>
                           <td>
                             <div className="goMetas-red-btn-container">
-                              <NotificationButton/>
+                              <NotificationButton saleId={sale.id}/>
                             </div>
                           </td>
                        </tr>
